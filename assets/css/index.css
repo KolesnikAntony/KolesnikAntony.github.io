@@ -781,7 +781,7 @@ a {
     position: relative;
     width: 300px;
     height: 300px;
-    box-shadow: 3px 3px 6px;
+    box-shadow: 2px 2px 5px black;
     z-index: 3;
 }
 
