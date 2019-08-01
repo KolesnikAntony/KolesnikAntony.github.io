@@ -723,6 +723,7 @@ a {
 .intro__description {
     margin: 0;
     font-size: 54px;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
