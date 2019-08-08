@@ -934,6 +934,10 @@ a {
     margin: 0;
 }
 
+.portfolio__cart--subtitle {
+    font-weight: 400;
+}
+
 .portfolio__text {
     margin: 0;
     margin-bottom: 40px;
