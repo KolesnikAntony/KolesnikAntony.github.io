@@ -811,6 +811,7 @@ a {
         width: 300px;
         height: 300px;
         order: 0;
+        margin-left: 0;
     }
 }
 
