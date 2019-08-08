@@ -779,6 +779,10 @@ a {
     line-height: 2.5em;
 }
 
+.aboutme__description span {
+    text-indent: 20px;
+}
+
 .aboutme__image {
     position: relative;
     width: 300px;
