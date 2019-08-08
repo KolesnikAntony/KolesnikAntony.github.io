@@ -932,10 +932,7 @@ a {
 .portfolio__title {
     text-transform: uppercase;
     margin: 0;
-}
-
-.portfolio__cart--subtitle {
-    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .portfolio__text {
@@ -977,6 +974,10 @@ a {
     transition: transform 0.2s, -webkit-transform 0.2s;
     -webkit-box-shadow: 5px 5px 10px black;
     box-shadow: 5px 5px 10px black;
+}
+
+.portfolio__card--subtitle {
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {
