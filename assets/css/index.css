@@ -780,7 +780,7 @@ a {
 }
 
 .aboutme__description span {
-    text-indent: 20px;
+    margin-left: 20px;
 }
 
 .aboutme__image {
