@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //FIXED HEADER
+    //SCROLL
     $('a[data-target^="anchor"]').on('click.smoothscroll', function() {
         var target = $(this).attr('href');
         var bl_top = $(target).offset().top - 50;
@@ -9,16 +9,15 @@ $(document).ready(function() {
 
     });
 
-    //SCROLL
+
+    //FIXED HEADER
     let header = $('.header');
     header.removeClass('defoult');
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 10) {
-            console.log("More 20px");
+        if ($(this).scrollTop() > 100) {
             header.addClass('defoult');
         } else {
-            console.log("Less 20px");
             header.removeClass('defoult');
         }
 

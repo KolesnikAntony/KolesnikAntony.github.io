@@ -612,7 +612,7 @@ a {
 
 .header {
     z-index: 99;
-    position: absolute;
+    position: fixed;
     width: 100%;
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
@@ -621,7 +621,6 @@ a {
 }
 
 .header.defoult {
-    position: fixed;
     background-color: #070B0D;
 }
 
