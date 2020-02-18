@@ -1,0 +1,105 @@
+{
+    "view": {
+        "fonts":{
+            "first":"https://fonts.googleapis.com/css?family=Roboto:300,400,500",
+            "second":"https://fonts.googleapis.com/css?family=Roboto:300,400,500",
+            "family_first":"'Roboto', sans-serif;",
+            "family_second":"'Roboto', sans-serif;"
+        },
+        "colors":{
+            "first":"#d34085",
+            "second":"#212529"
+        }
+    },
+    "first_page":{
+        "name" : "Узнай стоимость и сроки выкупа своего автомобиля",
+        "subtitle" : "Пройди тест и получи чек-лист подготовки автомобиля к продаже",
+        "description" : "Узнай стоимость и сроки выкупа своего автомобиля",
+        "button" : "Пройти тест",
+        "page_title" : "",
+        "image" : {
+            "src" : "http://res.cloudinary.com/hgwipn3sa/image/upload/dpr_1.0,f_auto,w_767/ufzgoisphrgym7jlx6t3.jpg"
+        }
+    },
+    "questions" : [
+        {
+            "title":"Какая марка вашего автомобиля?",
+            "type":"text",
+            "placeholder":"Например: Nisan",
+            "collapse":"on",
+            "required":true,
+            "when": {
+                "logic":"or",
+                "rules":[]
+            }
+        }
+    ],
+    "widget":{
+        "openSelector":".quiz-go-show-",
+        "autoOpen":false,
+        "autoOpenDelay":0,
+        "openBeforeClose":false,
+        "button":{
+            "borderRadius":true,
+            "background":"#d34085",
+            "color":"#ffffff",
+            "round":true,
+            "shadow":true,
+            "text":"Пройти тест"
+        }
+    },
+    "consultant": {
+        "name":"Ирина",
+        "post":"Эксперт по выбору окон",
+        "image":{
+            "src": "http://quizgo.ru/assets/dashboard/build/img/default-consultant.png"
+        }
+    },
+    "results" : {
+        "show" : "after",
+        "multiple" : true,
+        "restart" : true,
+        "page" : {
+            "title" : "Ваши результаты",
+            "text" : "Страница со списком результатов текст",
+            "button" : "Страница кнопка",
+            "button_not_know" : true
+        },
+        "list":[]
+    },
+    "last_page":{
+        "title" : "Отлично. Последний шаг!",
+        "subtitle" : "Заполните форму, чтобы получить оценку стоимости своего автомобиля",
+        "text" : "Мы рассчитаем стоимость автомобиля по указанным параметрам и расскажем о результатах в течение 10 минут",
+        "button" : "Получить оценку"
+    },
+    "contact_form":{
+        "name":{
+            "enabled":true,
+            "required":false,
+            "hint":""
+        },
+        "phone":{
+            "enabled":true,
+            "required":false,
+            "hint":""
+        },
+        "email":{
+            "enabled":true,
+            "required":false,
+            "hint":""
+        },
+        "thank_you":"",
+        "policy":{
+            "enabled":true,
+            "checked":true,
+            "file":{
+                "src": ""
+            }
+        },
+        "redirect":{
+            "enable": false,
+            "url": ""
+        }
+    }
+}

@@ -1,0 +1,168 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-Facebook {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -349px 0px;
+  width: 30px;
+  height: 31px;
+}
+.icon-Instagram {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -189px 0px;
+  width: 30px;
+  height: 32px;
+}
+.icon-OK {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -389px 0px;
+  width: 30px;
+  height: 31px;
+}
+.icon-VK {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -309px 0px;
+  width: 30px;
+  height: 31px;
+}
+.icon-Youtube {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -229px 0px;
+  width: 30px;
+  height: 31px;
+}
+.icon-arrow-left {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -867px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-arrow-right {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -807px 0px;
+  width: 50px;
+  height: 50px;
+}
+.icon-arrowBot {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -471px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-back {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -129px 0px;
+  width: 20px;
+  height: 20px;
+}
+.icon-calendar {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -269px 0px;
+  width: 30px;
+  height: 30px;
+}
+.icon-close {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -20px 0px;
+  width: 16px;
+  height: 16px;
+}
+.icon-logo {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -1180px 0px;
+  width: 158px;
+  height: 33px;
+}
+.icon-man {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -571px 0px;
+  width: 49px;
+  height: 52px;
+}
+.icon-menu {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -429px 0px;
+  width: 32px;
+  height: 25px;
+}
+.icon-ok-gray {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -159px 0px;
+  width: 20px;
+  height: 20px;
+}
+.icon-ok-white {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -99px 0px;
+  width: 20px;
+  height: 20px;
+}
+.icon-play {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -927px 0px;
+  width: 89px;
+  height: 89px;
+}
+.icon-point-active {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -72px 0px;
+  width: 17px;
+  height: 16px;
+}
+.icon-point {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: 0px 0px;
+  width: 10px;
+  height: 10px;
+}
+.icon-prod {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -630px 0px;
+  width: 49px;
+  height: 52px;
+}
+.icon-question {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -46px 0px;
+  width: 16px;
+  height: 16px;
+}
+.icon-questionB {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -513px 0px;
+  width: 48px;
+  height: 48px;
+}
+.icon-sales {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -748px 0px;
+  width: 49px;
+  height: 39px;
+}
+.icon-setting {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -689px 0px;
+  width: 49px;
+  height: 52px;
+}
+.icon-smit-logo {
+  background-image: url(../img/icons/icons_sprite.png);
+  background-position: -1026px 0px;
+  width: 144px;
+  height: 31px;
+}

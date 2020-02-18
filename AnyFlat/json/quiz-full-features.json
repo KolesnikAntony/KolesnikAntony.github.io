@@ -1,0 +1,268 @@
+{
+    "view": {
+        "fonts":{
+            "first":"https://fonts.googleapis.com/css?family=Roboto:300,400,500",
+            "second":"https://fonts.googleapis.com/css?family=Roboto:300,400,500",
+            "family_first":"'Roboto', sans-serif;",
+            "family_second":"'Roboto', sans-serif;"
+        },
+        "colors":{
+            "first":"#d34085",
+            "second":"#212529"
+        }
+    },
+    "first_page":{
+        "name" : "Узнай стоимость и сроки выкупа своего автомобиля",
+        "subtitle" : "Пройди тест и получи чек-лист подготовки автомобиля к продаже",
+        "description" : "Узнай стоимость и сроки выкупа своего автомобиля",
+        "button" : "Пройти тест",
+        "page_title" : "Заголовок Title для страницы",
+        "image" : {
+            "src" : "http://res.cloudinary.com/hgwipn3sa/image/upload/dpr_1.0,f_auto,w_767/ufzgoisphrgym7jlx6t3.jpg"
+        }
+    },
+    "questions" : [
+        {
+            "title":"Какой цвет вы рассматриваете?",
+            "hint_consultant":"Пройди тест и получи чек-лист подготовки автомобиля к продаже",
+            "type":"radio",
+            "values":[
+                {"name":"Красный"},
+                {"name":"Жетый"},
+                {"name":"Синий"},
+                {"name":"Зеленый"},
+                {"name":"Черный"}
+            ],
+            "required":true,
+            "next":true,
+            "custom_answer":true,
+            "collapse":"off",
+            "when": {
+                "logic":"or",
+                "rules":[]
+            }
+        },
+        {
+            "title":"Какой бюджет выделен на разработку сайта?",
+            "type":"range",
+            "min":0,
+            "max":1000,
+            "from":20,
+            "to":220,
+            "step":10,
+            "rangeType":"single",
+            "required":true,
+            "collapse":"off",
+            "when": {
+                "logic":"or",
+                "rules":[]
+            }
+        },
+        {
+            "title":"Какой тип кузова?",
+            "type":"checkbox",
+            "values":[
+                {"name":"Седан"},
+                {"name":"Купе"},
+                {"name":"Универсал"},
+                {"name":"Родстер"},
+                {"name":"SUV"}
+            ],
+            "required":true,
+            "next":true,
+            "custom_answer":true,
+            "collapse":"off",
+            "when": {
+                "logic":"or",
+                "rules":[
+                    {
+                        "question":0,
+                        "type":"%",
+                        "value":"кр",
+                        "inverse": false
+                    },
+                    {
+                        "question":0,
+                        "type":"_%",
+                        "value":"ый",
+                        "inverse": false
+                    }
+                ]
+            }
+        },
+        {
+            "title":"Какая марка вашего автомобиля??",
+            "type":"text",
+            "placeholder":"Например: Nisan",
+            "collapse":"off",
+            "required":true,
+            "when": {
+                "logic":"or",
+                "rules":[]
+            }
+        },
+        {
+            "title":"Вопрос 3",
+            "type":"text",
+            "placeholder":"Например: 2",
+            "collapse":"off",
+            "required":true,
+            "when": {
+                "logic":"or",
+                "rules":[]
+            }
+        },
+        {
+            "title":"Укажите год выпуска автомобиля",
+            "placeholder":"-- год выпуска --",
+            "type":"select",
+            "next":true,
+            "collapse":"off",
+            "values":[
+                {"name":"1996"},
+                {"name":"1997"},
+                {"name":"1998"},
+                {"name":"1999"},
+                {"name":"2000"},
+                {"name":"2001"},
+                {"name":"2002"},
+                {"name":"2003"}
+            ],
+            "required":true,
+            "when": {
+                "logic":"or",
+                "rules":[]
+            }
+        },
+        {
+            "title":"Укажите модель вашего автомобиля",
+            "type":"text",
+            "collapse":"off",
+            "placeholder":"Например: RS-300",
+            "required":true,
+            "when": {
+                "logic":"or",
+                "rules":[]
+            }
+        }
+    ],
+    "widget":{
+        "openSelector":".quiz-go-show-",
+        "autoOpen":false,
+        "autoOpenDelay":0,
+        "openBeforeClose":false,
+        "button":{
+            "background":"#d34085",
+            "color":"#ffffff",
+            "round":true,
+            "shadow":true,
+            "text":"Пройти опрос"
+        }
+    },
+    "consultant": {
+        "name":"Ирина",
+        "post":"Эксперт по выбору окон",
+        "image":{
+            "src": "/assets/dashboard/build/img/default-consultant.png"
+        }
+    },
+    "results" : {
+        "show" : "after",
+        "multiple" : true,
+        "restart" : true,
+        "page" : {
+            "title" : "Ваши результаты",
+            "text" : "Страница со списком результатов текст",
+            "button" : "Страница кнопка",
+            "button_not_know" : true
+        },
+        "list":[
+            {
+                "title":"Результат 1 заголовок",
+                "text":"Результат 1 описание",
+                "button":"Кнопка",
+                "collapse":"off",
+                "price":"1000",
+                "type":"equally",
+                "url":"//ya.ru",
+                "image":{
+                    "id" : "",
+                    "src" : "http://res.cloudinary.com/hgwipn3sa/image/upload/dpr_1.0,f_auto,w_767/ufzgoisphrgym7jlx6t3.jpg"
+                },
+                "when": {
+                    "logic":"or",
+                    "rules":[]
+                }
+            },
+            {
+                "title":"Результат 2 заголовок",
+                "text":"Результат 2 описание",
+                "button":"Кнопка 2",
+                "collapse":"off",
+                "price":"2000",
+                "url":"//ya.ru",
+                "type":"from",
+                "image":{
+                    "id" : "",
+                    "src" : "http://res.cloudinary.com/hgwipn3sa/image/upload/dpr_1.0,f_auto,w_767/ufzgoisphrgym7jlx6t3.jpg"
+                },
+                "when": {
+                    "logic":"or",
+                    "rules":[]
+                }
+            },
+            {
+                "title":"Результат 3 заголовок",
+                "text":"Результат 3 описание",
+                "button":"Кнопка 3",
+                "price":"3000",
+                "collapse":"off",
+                "url":"//ya.ru",
+                "type":"to",
+                "image":{
+                    "id" : "",
+                    "src" : "http://res.cloudinary.com/hgwipn3sa/image/upload/dpr_1.0,f_auto,w_767/ufzgoisphrgym7jlx6t3.jpg"
+                },
+                "when": {
+                    "logic":"or",
+                    "rules":[]
+                }
+            }
+        ]
+    },
+    "last_page":{
+        "title" : "Отлично. Последний шаг!!!!",
+        "subtitle" : "Заполните форму, чтобы получить оценку стоимости своего автомобиля",
+        "text" : "Мы рассчитаем стоимость автомобиля по указанным параметрам и расскажем о результатах в течение 10 минут",
+        "button" : "Получить оценку 2"
+    },
+    "contact_form":{
+        "name":{
+            "enabled":true,
+            "required":false,
+            "hint":"Подсказка для имени"
+        },
+        "phone":{
+            "enabled":true,
+            "required":false,
+            "hint":"Подсказка для телефона"
+        },
+        "email":{
+            "enabled":true,
+            "required":false,
+            "hint":"Подсказка для почты"
+        },
+        "thank_you":"Спасибо текст после отправки формы",
+        "policy":{
+            "enabled":true,
+            "checked":false,
+            "file":{
+                "src": "//ya.ru"
+            }
+        },
+        "redirect":{
+            "enable": true,
+            "url": "http://quizgo.ru"
+        }
+    }
+}
