@@ -1,0 +1,298 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto, 'Times new roman', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    color: #292b2c;
+    background: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    color: #292b2c;
+    text-decoration: none;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    background: crimson;
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__info a {
+    color: white;
+}
+
+.header__logo-img {
+    width: 140px;
+}
+
+.header__data {
+    display: flex;
+    color: white;
+}
+
+.header__data span:nth-child(2) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../img/intro.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__text {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: crimson;
+    text-shadow: 0 0 10px floralwhite;
+    border-bottom: 2px solid crimson;
+    padding-bottom: 10px;
+}
+
+.intro__link {
+    padding: 15px 20px;
+    background-color: crimson;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.intro__link:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.vac {
+    padding-top: 60px;
+}
+
+.vac__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.vac__vars {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+.vac__var {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.vac__price {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+.vac__sub {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+}
+
+.vac__sub-text {
+    margin: 0;
+}
+
+.guarantee {
+    padding-top: 60px;
+}
+
+.guarantee__items {
+    margin-bottom: 60px;
+}
+
+.guarantee__sub {
+    text-align: center;
+    padding: 20px;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+}
+
+.form-contact {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.form {
+    border: 2px crimson solid;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label span {
+    margin-bottom: 10px;
+}
+
+label input {
+    padding: 10px;
+    width: 220px;
+}
+
+label select {
+    padding: 10px;
+    width: 220px;
+}
+
+.form__submit {
+    padding: 12px;
+    color: white;
+    background: crimson;
+    border: none;
+    border-radius: 5px;
+    width: 220px;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.footer {
+    background: crimson;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__data {
+    display: flex;
+}
+
+.footer__data span {
+    margin-right: 20px;
+}
+
+.footer__data span:last-of-type {
+    margin-right: 0;
+}
+
+.footer__tel {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header__info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__logo {
+        margin-bottom: 20px;
+    }
+    .header__data {
+        margin-bottom: 20px;
+    }
+    .intro__text {
+        font-size: 24px;
+        text-align: center;
+    }
+    .vac__vars {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .form__inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+    label {
+        width: 100%;
+    }
+    label input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    label select {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .form__submit {
+        width: 100%;
+    }
+    .footer__info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
